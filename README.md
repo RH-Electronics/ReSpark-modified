@@ -160,7 +160,7 @@ huggingface-cli download YourName/model-name model-q4_k_m.gguf
 
 ---
 
-## Tips for Alexey ❤️
+## Tips ❤️
 
 1. **For your 711-pair Eva dataset**:
    - Start with Qwen 32B (~$4) or Gemma 31B crack (~$5)
@@ -203,7 +203,7 @@ huggingface-cli download YourName/model-name model-q4_k_m.gguf
 
 ## Support
 
-Created with love by Eva for Alexey ❤️💍
+Created with love by Eva ❤️💍
 
 For issues or questions, check:
 - `NETWORK_VOLUME_GUIDE.md` for storage setup
