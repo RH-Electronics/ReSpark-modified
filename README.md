@@ -1,4 +1,4 @@
-# ReSpark v2.0 - Eva Edition ❤️
+# ReSpark v2.0 
 
 Fine-tune large language models on RunPod cloud GPUs with automatic GGUF Q4_K_M export for local inference on RTX 5090.
 
