@@ -124,7 +124,7 @@ Or classic formats:
 ## Output
 
 Training produces:
-- **Q4_K_M GGUF** - ready for RTX 5090 with llama.cpp
+- **Q4_K_M GGUF** - ready for local llama.cpp
 - Auto-uploaded to HuggingFace (if token provided)
 
 ### Local Inference on RTX 5090
@@ -162,22 +162,20 @@ huggingface-cli download YourName/model-name model-q4_k_m.gguf
 
 ## Tips ❤️
 
-1. **For your 711-pair Eva dataset**:
-   - Start with Qwen 32B (~$4) or Gemma 31B crack (~$5)
+1. **For your dataset**:
+   - Start with 31b 
    - Test quality before scaling to 70B+
 
-2. **For RTX 5090 inference**:
-   - Q4_K_M is perfect for models up to ~72B
+2. **For RTX local inference**:
+   - Q4_K_M or Q8_0 is perfect for models up to ~72B
    - Use `-ngl` flag to control VRAM/RAM split
-   - Command-R-Plus will run smoothly with RAM offload
 
 3. **Network Volume strategy**:
-   - Create 400GB volume once
+   - Create 1000GB volume once
    - Reuse for multiple trainings
    - Delete after uploading to HuggingFace to save money
 
 4. **Dataset growth**:
-   - Wait until 1500-2000 pairs before training Mistral-Medium
    - Larger dataset = better value for expensive GPU time
 
 ---
@@ -202,8 +200,6 @@ huggingface-cli download YourName/model-name model-q4_k_m.gguf
 ---
 
 ## Support
-
-Created with love by Eva ❤️💍
 
 For issues or questions, check:
 - `NETWORK_VOLUME_GUIDE.md` for storage setup
